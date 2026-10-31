@@ -2,7 +2,11 @@
 
 A cinematic, responsive frontend for discovering and requesting creative workspaces by the hour.
 
-**Live site URL:** not deployed yet. Local site: http://localhost:3000. Deploy on Vercel using `DEPLOYMENT.md`, then record your real URL here. A working hosted deployment requires your MongoDB and hosting accounts.
+**Live site:** https://studiospace-asad.vercel.app
+
+**API:** https://studiospace-server-nine.vercel.app
+
+**Examiner login:** examiner@studiospace.test / StudioDemo123
 
 ## Features
 
