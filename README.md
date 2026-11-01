@@ -8,6 +8,8 @@ A cinematic, responsive frontend for discovering and requesting creative workspa
 
 **Examiner login:** examiner@studiospace.test / StudioDemo123
 
+**Booking conflict demo:** The Daylight Loft already has a Confirmed booking on 2026-12-15, 10:00-12:00. Try 11:00-13:00 that day to see the conflict error. Try 12:00-13:30 to see an adjacent slot succeed.
+
 ## Features
 
 - Three-slide Swiper hero and a MongoDB-backed, six-card featured section.
