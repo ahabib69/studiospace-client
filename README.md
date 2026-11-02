@@ -83,3 +83,14 @@ Unknown paths use `app/not-found.jsx`. All routes run under Next.js, not a stati
 ## Scope
 
 Booking requests start Pending. No payment or automatic confirmation is implied. Newsletter signup is a success-toast demonstration and does not store emails. The seed data is fictional. Optional wishlist and PDF invoices are not included. Google, external image hosting and deployment require your own service configuration.
+
+## Challenges implemented
+
+- **JWT in HTTPOnly cookies:** protected mutations (create, update and delete studios, create and cancel bookings) require a valid JWT cookie and return `401 Unauthorized` without one. Studio edit and delete are limited to the owner.
+- **Double-booking prevention:** before a booking is saved, the server checks for time overlap with existing Confirmed bookings for the same studio and date, and rejects collisions with a `409` and a clear message. Try it on The Daylight Loft, 2026-12-15, 11:00-13:00.
+- **Light and dark theme:** a toggle in the navbar switches the whole site, and the choice is remembered after a reload.
+- **Image upload:** studio photos can be uploaded to imgbb through the server, or added by pasting an image URL.
+
+## Server repository
+
+The Express API lives in a separate repository: https://github.com/ahabib69/studiospace-server
